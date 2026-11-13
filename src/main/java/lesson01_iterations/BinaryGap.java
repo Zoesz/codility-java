@@ -1,25 +1,25 @@
 package lesson01_iterations;
 
+//13 perc újból
 public class BinaryGap {
     public int solution(int N) {
-        String bin = Integer.toBinaryString(N);
+        String binary = Integer.toBinaryString(N);
 
-        int res = 0;
-        int temp = 0;
-        for (int i = 0; i < bin.length(); i++) {
+        int currentGap = 0;
+        int maxGap = 0;
 
-            if (bin.charAt(i) == '1') {
-                if (res < temp) {
-                    res = temp;
+        for (int i = 0; i < binary.length(); i++) {
+
+            if (binary.charAt(i) == '1') {
+                if (maxGap < currentGap) {
+                    maxGap = currentGap;
                 }
-                temp = 0;
-
+                currentGap = 0;
             } else {
-                temp++;
+                currentGap++;
             }
         }
-
-        return res;
+        return maxGap;
     }
 }
 
