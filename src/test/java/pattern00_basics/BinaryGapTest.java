@@ -1,4 +1,4 @@
-package lesson01_iterations;
+package pattern00_basics;
 
 import org.junit.jupiter.api.Test;
 

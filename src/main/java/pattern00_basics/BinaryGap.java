@@ -1,4 +1,4 @@
-package lesson01_iterations;
+package pattern00_basics;
 
 //13 perc újból
 public class BinaryGap {
